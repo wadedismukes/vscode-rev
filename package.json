@@ -1,0 +1,41 @@
+{
+    "name": "rev",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "1.0.0",
+    "publisher": "wade",
+    "license": "MIT",
+    "engines": {
+      "vscode": "*"
+    },
+    "scripts": {
+      "update-grammar": "node ../node_modules/vscode-grammar-updater/bin wadedismukes/vscode-rev ./syntaxes/r.tmLanguage.json"
+    },
+    "contributes": {
+      "languages": [
+        {
+          "id": "rev",
+          "extensions": [
+            ".rev",
+            ".Rev"
+          ],
+          "aliases": [
+            "Rev",
+            "rev"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "rev",
+          "scopeName": "source.rev",
+          "path": "./syntaxes/revtmLanguage.json"
+        }
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/microsoft/vscode.git"
+    }
+  }
