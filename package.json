@@ -1,6 +1,6 @@
 {
     "name": "rev",
-    "displayName": "%displayName%",
+    "displayName": "Rev",
     "description": "%description%",
     "version": "1.0.0",
     "publisher": "wade",
@@ -9,7 +9,7 @@
       "vscode": "*"
     },
     "scripts": {
-      "update-grammar": "node ../node_modules/vscode-grammar-updater/bin wadedismukes/vscode-rev ./syntaxes/r.tmLanguage.json"
+      "update-grammar": "vscode-grammar-updater wadedismukes/vscode-rev ./syntaxes/rev.tmLanguage.json"
     },
     "contributes": {
       "languages": [
@@ -30,7 +30,7 @@
         {
           "language": "rev",
           "scopeName": "source.rev",
-          "path": "./syntaxes/revtmLanguage.json"
+          "path": "./syntaxes/rev.tmLanguage.json"
         }
       ]
     },
