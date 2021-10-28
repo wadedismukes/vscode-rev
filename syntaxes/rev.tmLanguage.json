@@ -412,7 +412,7 @@
 					}
 				},
 				{
-					"match": "\\b(VectorMonitors|VectorMoves||abs|ancestralStateTree|annotateTree|\\.append|branchScoreDistance|ceil|characterMapTree|checkNodeOrderConstraints|choose|clear|combineCharacter\\s*(\\()",
+					"match": "\\b(VectorMonitors|VectorMoves|abs|ancestralStateTree|annotateTree|append|branchScoreDistance|ceil|characterMapTree|checkNodeOrderConstraints|choose|clear|combineCharacter\\s*(\\()",
 					"captures": {
 						"1": {
 							"name": "support.function.rev"
