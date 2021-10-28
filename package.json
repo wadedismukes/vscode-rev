@@ -1,21 +1,38 @@
 {
-    "name": "vscode-rev",
+    "name": "r",
     "displayName": "%displayname%",
     "description": "%description%",
-      "engines": {
-         "vscode": ">=0.9.0-pre.1"
-     },
-     "publisher": "wade",
-     "contributes": {
-         "languages": [{
-             "id": "Rev",
-             "aliases": ["Rev", "rev"],
-             "extensions": [".Rev",".rev"]
-         }],
-         "grammars": [{
-             "language": "Rev",
-             "scopeName": "source.rev",
-             "path": "./syntaxes/rev.tmLanguage.json"
-         }]
-     }
- }
+    "version": "1.0.0",
+    "publisher": "vscode",
+    "license": "MIT",
+    "engines": {
+      "vscode": "*"
+    },
+    "contributes": {
+      "languages": [
+        {
+          "id": "rev",
+          "extensions": [
+            ".rev",
+            ".Rev",
+          ],
+          "aliases": [
+            "Rev",
+            "rev"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "rev",
+          "scopeName": "source.rev",
+          "path": "./syntaxes/rev.tmLanguage.json"
+        }
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/microsoft/vscode.git"
+    }
+  }
