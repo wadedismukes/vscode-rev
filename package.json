@@ -8,12 +8,12 @@
      "publisher": "wade",
      "contributes": {
          "languages": [{
-             "id": "rev",
+             "id": "Rev",
              "aliases": ["Rev", "rev"],
              "extensions": [".Rev",".rev"]
          }],
          "grammars": [{
-             "language": "rev",
+             "language": "Rev",
              "scopeName": "source.rev",
              "path": "./syntaxes/rev.tmLanguage.json"
          }]
