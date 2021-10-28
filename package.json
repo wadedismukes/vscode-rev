@@ -2,40 +2,20 @@
     "name": "vscode-rev",
     "displayName": "%displayname%",
     "description": "%description%",
-    "version": "1.0.0",
-    "publisher": "wade",
-    "license": "MIT",
-    "engines": {
-      "vscode": "*"
-    },
-    "scripts": {
-      "update-grammar": "vscode-grammar-updater wadedismukes/vscode-rev ./syntaxes/rev.tmLanguage.json"
-    },
-    "contributes": {
-      "languages": [
-        {
-          "id": "rev",
-          "extensions": [
-            ".rev",
-            ".Rev"
-          ],
-          "aliases": [
-            "Rev",
-            "rev"
-          ],
-          "configuration": "./language-configuration.json"
-        }
-      ],
-      "grammars": [
-        {
-          "language": "rev",
-          "scopeName": "source.rev",
-          "path": "./syntaxes/rev.tmLanguage.json"
-        }
-      ]
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/microsoft/vscode.git"
-    }
-  }
+      "engines": {
+         "vscode": ">=0.9.0-pre.1"
+     },
+     "publisher": "wade",
+     "contributes": {
+         "languages": [{
+             "id": "rev",
+             "aliases": ["Rev", "rev"],
+             "extensions": [".Rev",".rev"]
+         }],
+         "grammars": [{
+             "language": "rev",
+             "scopeName": "source.rev",
+             "path": "./syntaxes/rev.tmLanguage.json"
+         }]
+     }
+ }
