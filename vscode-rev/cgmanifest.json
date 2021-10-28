@@ -1,0 +1,17 @@
+{
+	"registrations": [
+		{
+			"component": {
+				"type": "git",
+				"git": {
+					"name": "wadedismukes/vscode-rev",
+					"repositoryUrl": "https://github.com/wadedismukes/vscode-rev",
+					"commitHash": "c6a9803fbda262ea68c427a2339bddafed41a9d5"
+				}
+			},
+			"license": "MIT",
+			"version": "2.1.0"
+		}
+	],
+	"version": 1
+}
